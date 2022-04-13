@@ -5,9 +5,9 @@ idk i wanna try some next.js
 ----
 # Original Readme
 
-# Perfect
+## Perfect
 The best Next.js boilerplate ever.
-# What does this have?
+## What does this have?
 - Tailwind CSS (no more going through the installation guide!) - for styling components easily
 - `next-themes` (@pacocoursey) - for going to the dark side
 - `swr` (@vercel) - for fetching constantly mutating data
