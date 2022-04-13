@@ -1,3 +1,10 @@
+integ 121 portfolio + maybe future portfolio? 
+idk i wanna try some next.js
+
+
+----
+# Original Readme
+
 # Perfect
 The best Next.js boilerplate ever.
 # What does this have?
