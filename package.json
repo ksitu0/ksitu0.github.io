@@ -8,8 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.1.1",
+    "@next/mdx": "^12.1.5",
     "framer-motion": "^6.2.8",
-    "next": "^12.1.4",
+    "next": "^12.1.5",
     "next-themes": "^0.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.0.23",
+    "tailwindcss-animate": "^1.0.5"
   }
 }

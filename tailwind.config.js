@@ -2,10 +2,17 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+			animationDelay: {
+				"2s": 2000,
+			},
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+		require("tailwindcss-animate"),
+		// ...
+	],
 }
