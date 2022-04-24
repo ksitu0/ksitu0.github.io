@@ -1,36 +1,113 @@
 {
     "projectCards": [
         {
-            "id": 5,
-            "title": "Policy Brief: Tablet Medication Without Waste",
+            "id": 6,
+            "title": "Policy Brief Proposal: Tablet Medication Without Waste",
             "summary": "From Open Design Challenge: How might we use circular economy principles to rethink the storage, delivery, and dispensing of tablet medication?",
-            "tags": ["Design thinking", "Critical thinking"]
+            "tags": ["Design thinking", "Critical thinking"],
+
+            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+
+            "url": "/project/6"
+        },
+        {
+            "id": 5,
+            "title": "HTML as the heap??",
+            "summary": "I spent three days crafting the ugliest palindrome detector code. What makes code hard to read? What defies good coding practices?",
+            "tags": ["JS + frameworks", "Design thinking"],
+
+            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+
+            "url": "https://github.com/ksitu0/WSIB-code-problems/tree/main/Ugly"
         },
         {
             "id": 4,
             "title": "PSA for sustainable food choices",
-            "summary": "Vegeterian for one meal is better than vegeterian for 0 meals.",
-            "tags": ["Design thinking", "Conflict management", "Graphics"]
+            "summary": "Vegeterian for 1 meal is better than vegeterian for 0 meals.",
+            "tags": ["Design thinking", "Conflict management", "Graphic design"],
+
+            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+
+            "url": "/project/4"
         },
         {
             "id": 3,
             "title": "Chairapy",
-            "summary": "An AI powered (fluffy) seat cover that reminds us to eat and listens to us rant.",
-            "tags": ["Android", "Machine learning", "Arduino", "UI/UX", "Leadership"]
+            "summary": "I lead the team to build an local-ML powered (fluffy) seat cover that reminds us to eat and listens to us rant. It's also paired with an Android app! Project name etymology: Chair + Therapy",
+            "tags": ["Android", "Machine learning", "Arduino", "UI/UX", "Leadership", "Conflict management"],
+
+            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+
+            "url": "https://github.com/alexshaoo/Chairapy"
+        },
+        {
+            "id": 2,
+            "title": "3D Graphics Renderer from scratch",
+            "summary": "A scaled-down version of OpenGL in C++ without using external library functions! I made the UI, implemented the antialiasing algorithm and linear algebra libraries, and studied 3D lighting.",
+            "tags": ["C/C++", "UI/UX"],
+
+            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+
+            "url": "https://github.com/econaxis/renderer"
+        },
+        {
+            "id": 1,
+            "title": "This website",
+            "summary": "It's my attempt to learn some NextJS. I also wrote a ton of stuff about myself. Check out my other projects or read about my design philosophy!",
+            "tags": ["JS + frameworks", "UI/UX", "Design thinking"],
+
+            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+
+            "url": "/"
         }
     ],
     "tags" : {
-        "Design thinking": "bg-rose-100", 
+        "Design thinking": {
+            "color": "bg-cyan-100", 
+            "category": ["Thinking", "Design"]
+        },
 
-        "Android": "bg-teal-100", 
-        "Machine learning": "bg-emerald-100",  
-        "Arduino": "bg-indigo-100",  
+        "JS + frameworks": {
+            "color": "bg-orange-100", 
+            "category": ["Technical", "Frontend"]
+        },
+        "C/C++": {
+            "color": "bg-orange-100", 
+            "category": ["Technical", "Backend"]
+        },
+        "Android": {
+            "color": "bg-orange-100", 
+            "category": ["Frontend", "Technical"]
+        },
+        "Machine learning": {
+            "color": "bg-yellow-100", 
+            "category": ["Technical", "Research"]
+        },
+        "Arduino": {
+            "color": "bg-yellow-100", 
+            "category": ["Technical"]
+        },
 
-        "Leadership": "bg-blue-100", 
-        "Critical thinking": "bg-green-100", 
-        "Conflict management": "bg-amber-100", 
-
-        "Graphics": "bg-red-100", 
-        "UI/UX": "bg-pink-100"
+        "Leadership": {
+            "color": "bg-green-100", 
+            "category": ["Interpersonal"]
+        },
+        "Critical thinking": {
+            "color": "bg-green-100", 
+            "category": ["Thinking", "Research"]
+        },
+        "Conflict management": {
+            "color": "bg-green-100", 
+            "category": ["Interpersonal"]
+        },
+        
+        "Graphic design": {
+            "color": "bg-blue-100", 
+            "category": ["Design"]
+        },
+        "UI/UX": {
+            "color": "bg-blue-100", 
+            "category": ["Design"]
+        }
      }
 }

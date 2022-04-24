@@ -2,7 +2,7 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   safelist: [
     {
-      pattern: /bg-(red|green|blue|rose|amber|teal|emerald|indigo|pink)-(100|700)*/,
+      pattern: /bg-(red|orange|yellow|green|cyan|blue|rose|amber|teal|emerald|indigo|pink|purple)-(100|700)*/,
     },
   ],
   darkMode: 'class',
