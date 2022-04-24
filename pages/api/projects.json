@@ -1,0 +1,36 @@
+{
+    "projectCards": [
+        {
+            "id": 5,
+            "title": "Policy Brief: Tablet Medication Without Waste",
+            "summary": "From Open Design Challenge: How might we use circular economy principles to rethink the storage, delivery, and dispensing of tablet medication?",
+            "tags": ["Design thinking", "Critical thinking"]
+        },
+        {
+            "id": 4,
+            "title": "PSA for sustainable food choices",
+            "summary": "Vegeterian for one meal is better than vegeterian for 0 meals.",
+            "tags": ["Design thinking", "Conflict management", "Graphics"]
+        },
+        {
+            "id": 3,
+            "title": "Chairapy",
+            "summary": "An AI powered (fluffy) seat cover that reminds us to eat and listens to us rant.",
+            "tags": ["Android", "Machine learning", "Arduino", "UI/UX", "Leadership"]
+        }
+    ],
+    "tags" : {
+        "Design thinking": "bg-rose-100", 
+
+        "Android": "bg-teal-100", 
+        "Machine learning": "bg-emerald-100",  
+        "Arduino": "bg-indigo-100",  
+
+        "Leadership": "bg-blue-100", 
+        "Critical thinking": "bg-green-100", 
+        "Conflict management": "bg-amber-100", 
+
+        "Graphics": "bg-red-100", 
+        "UI/UX": "bg-pink-100"
+     }
+}
