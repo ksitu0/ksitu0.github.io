@@ -12,7 +12,7 @@ export default function Nav() {
     const {theme, setTheme} = useTheme()
     return (
         <nav className="dark:text-white">
-            <ul className="sticky top-0 flex flex-wrap sm:justify-end items-start sm:items-center p-8 mt-0">
+            <ul className="sticky top-0 flex flex-wrap sm:justify-end items-start sm:items-center p-4 sm:p-8 mt-0">
                 <ul className={`mx-auto sm:mx-0 flex flex-row space-x-5`}>
                     {links.map(({ href, label }) => (
                         <li className="self-center" key={`${href}${label}`}>

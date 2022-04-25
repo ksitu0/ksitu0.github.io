@@ -59,7 +59,7 @@ export default function Home({projectCards, tags}) {
         <summary className="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
           Skill Filter
         </summary>
-        <div className="inline-flex flex-row flex-wrap rounded sm:divide-x divide-neutral-300 dark:divide-neutral-600">
+        <div className="inline-flex flex-row flex-wrap rounded md:divide-x divide-neutral-300 dark:divide-neutral-600">
         {categories.map(i=> (
           <div key={i} 
             onClick={()=> {

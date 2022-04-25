@@ -6,9 +6,27 @@
             "summary": "From Open Design Challenge: How might we use circular economy principles to rethink the storage, delivery, and dispensing of tablet medication?",
             "tags": ["Design thinking", "Critical thinking"],
 
-            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+            "featureImg": ["cover", "/feature-odc.jpg"],
 
-            "url": "/project/6"
+            "url": "/project/06",
+
+            "content": {
+                "TLDR": "/06-odc/synopsis.md",
+                "writings": [
+                    {
+                        "title": "Synthesizing information to avoid the Swedish Bad Lion",
+                        "file": "/06-odc/skill-reflection.md"
+                    },
+                    {
+                        "title": "Observation of a Plan B",
+                        "file": "/06-odc/planb-observation.md"
+                    },
+                    {
+                        "title": "Full Project Dossier",
+                        "file": "/06-odc/dossier.md"
+                    }
+                ]
+            }
         },
         {
             "id": 5,
@@ -16,7 +34,7 @@
             "summary": "I spent three days crafting the ugliest palindrome detector code. What makes code hard to read? What defies good coding practices?",
             "tags": ["JS + frameworks", "Design thinking"],
 
-            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+            "featureImg": ["cover", "/feature-uglyPalindrome.png"],
 
             "url": "https://github.com/ksitu0/WSIB-code-problems/tree/main/Ugly"
         },
@@ -26,9 +44,14 @@
             "summary": "Vegeterian for 1 meal is better than vegeterian for 0 meals.",
             "tags": ["Design thinking", "Conflict management", "Graphic design"],
 
-            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+            "featureImg": ["contain", "/feature-psa.png"],
 
-            "url": "/project/4"
+            "url": "/project/04",
+
+            "content": {
+                "TLDR": "/04-psa/synopsis.md",
+                "writings": []
+            }
         },
         {
             "id": 3,
@@ -36,7 +59,7 @@
             "summary": "I lead the team to build an local-ML powered (fluffy) seat cover that reminds us to eat and listens to us rant. It's also paired with an Android app! Project name etymology: Chair + Therapy",
             "tags": ["Android", "Machine learning", "Arduino", "UI/UX", "Leadership", "Conflict management"],
 
-            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+            "featureImg": ["contain", "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"],
 
             "url": "https://github.com/alexshaoo/Chairapy"
         },
@@ -46,7 +69,7 @@
             "summary": "A scaled-down version of OpenGL in C++ without using external library functions! I made the UI, implemented the antialiasing algorithm and linear algebra libraries, and studied 3D lighting.",
             "tags": ["C/C++", "UI/UX"],
 
-            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+            "featureImg": ["contain", "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"],
 
             "url": "https://github.com/econaxis/renderer"
         },
@@ -56,7 +79,7 @@
             "summary": "It's my attempt to learn some NextJS. I also wrote a ton of stuff about myself. Check out my other projects or read about my design philosophy!",
             "tags": ["JS + frameworks", "UI/UX", "Design thinking"],
 
-            "featureImg": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+            "featureImg": ["contain", "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"],
 
             "url": "/"
         }

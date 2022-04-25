@@ -11,6 +11,9 @@ module.exports = {
 			animationDelay: {
 				"2s": 2000,
 			},
+      spacing: {
+        'width': '100vw',
+      }
     },
   },
   variants: {
@@ -18,6 +21,6 @@ module.exports = {
   },
   plugins: [
 		require("tailwindcss-animate"),
-		// ...
+		require('@tailwindcss/typography')
 	],
 }
