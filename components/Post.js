@@ -9,7 +9,7 @@ export default function Post({ post, tagData }) {
         <img className={`z-10 hidden bg-white dark:bg-neutral-800 object-contain h-40 mb-4 transition sm:shadow-md sm:hover:shadow-xl duration-300 ease-in-out
                          sm:block sm:mb-0 sm:min-w-full sm:min-h-full sm:object-left-center ${featureImg[0] === "contain" ? "sm:object-contain" : "sm:object-cover"} sm:absolute sm:opacity-0 sm:hover:opacity-100`} src={featureImg[1]}></img>
         <div className="flex flex-col w-screen sm:w-80 sm:h-72 bg-neutral-100 sm:bg-white bg-white dark:bg-neutral-800 sm:shadow-md sm:hover:shadow-xl transition-shadow duration-300 ease-in-out">
-          <h1 className="sm:h-16 p-3 z-20 bg-neutral-100/50 sm:bg-white/50 dark:bg-neutral-800/50 backdrop-blur-md">
+          <h1 className="sm:h-16 p-3 z-20 bg-neutral-100/75 sm:bg-white/75 dark:bg-neutral-800/75 backdrop-blur-md">
             {id}. {title}
           </h1>
           <p className="px-3 text-gray-600 dark:text-gray-400">{summary}</p>
