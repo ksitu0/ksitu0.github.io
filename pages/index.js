@@ -30,6 +30,7 @@ export default function Home({projectCards, tags}) {
     <div className="text-base dark:text-white dark:bg-black font-light">
       <HeadObject>
         {/* You can put extra tags in here, or leave it blank */}
+        {/* dark mode sliding */}
       </HeadObject>
       <Nav />
       <div className="w-screen">
