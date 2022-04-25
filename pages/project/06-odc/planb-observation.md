@@ -18,18 +18,19 @@ What's inside, courtesy of Reddit:
 I will contrast possibly wasteful elements of the design against the safety reasonings behind them, then discuss any potential improvements.
 
 ### (Somewhat) Reasonable
-##### That it only contains one pill
+
+#### That it only contains one pill
 According to the caution sheet, taking plan B pills can lead to significant negative responses (such as vomiting, hormone changes, and emotional struggles) and should not be taken more than a few times. Some options provided by the same company contain two pills in one box. It's reasonable for a designer to include this number of pills for emergency use since medical professionals encourage using safer and more stable contraception over plan B.
 
-##### The big sheet of paper
+#### The big sheet of paper
 This is not wasteful because it has important documentation on the tablet for legal and safety reasons (eg what should you not do to make sure the pill is effective) in multiple languages. Not only are manufacturers legally required to include such documentation, but the sheet of paper also makes sure users can have the information they need. The text is accessible in terms of color contrast: it is black text on white paper in a very readable font. The font size is very small, making this aspect a little non-accessible. However, with most designs, this is an example of a trade-off. The designer had to balance between accessibility and waste reduction.
 
-##### The material of the box & The plastic on the outside
+#### The material of the box & The plastic on the outside
 The box is made of some paper-like material which is very fragile. The plastic ensures that the box is not tampered with, but the size of the box significantly increases the amount of plastic needed. Designers can replace this protective layer with biodegradable plastic, or use stronger materials for the box. For safety reasons, it's good that designers are 
 - ensuring the pill is not easily stolen (by having a box) because the pill makes the manufacturer lots of revenue
 - ensuring the pill is not tampered with (by having the plastic) because a tampered package with any decreased dosage or missing information can lead to significant medical consequences. 
 
-##### The size & material of the blister packaging
+#### The size & material of the blister packaging
 The blister packaging was once very innovative because they prevent the pills from being tampered with, both before and during retail. They came in plastic to decrease errors in dosage (eg powder sticking on the walls of, say, packaging the chemical bonds with the pill contents). Blister packaging also allows easy and dosage-accurate administration. However, plastic and foil packaging at such a large surface area for a single pill seems very unsustainable. From a UX point of view, a large blister package makes the pill easy to find and difficult to escape the box. We can solve both of the size problems (the box and the pill package) by making the box smaller. 
 
 The bumps on the blister packaging also prevent the pills from slipping out of the box. It increases surface area and plastic use but prevents misplaced medicine. One could keep these bumps using biodegradable blister packaging, redesign the outer box to decrease slipping through cracks, or have reusable blister packaging (see below).
@@ -39,7 +40,7 @@ The bumps on the blister packaging also prevent the pills from slipping out of t
 Ideally, plan B is not to be reused. However, we could decrease the amount of thrown-away blister packaging by having some digital dosage dispenser (to ensure accuracy and decrease human error) at the drug store/pharmacy and a reusable packaging of smaller size. Many pills are already contained in biodegradable containers (the soft pill cases that we swallow the whole medicine with).
 
 ### I cannot reason these
-##### The size of the box
+#### The size of the box
 The box is huge for its contents. Besides the waste products as described above, another side effect is that the large box makes the pill hard to hide. Society is shifting away from being embarrassed about contraceptives, but some still feel embarrassed to carry a big vibrant blue box with large labels "plan B." This could be intended by the designer, as part of efforts to encourage more reliable methods of contraception over plan B. 
 
 When we shrink the box, the surface area also shrinks. The main side of the box has large labels that make them easy to identify but notice that the side contains already extremely small text — very inaccessible and hard to read. Again, most chemicals have this kind of densely packed information for safety and legal reasons. However, I've once observed a soap bottle that had a re-sealable peel flap on one side so that side can contain three pages of information in larger text, instead of one page. It would have more important safety information on the first page and less urgent information like subsequent pages. If we do shrink the box, we can incorporate this kind of information display to ensure user safety while reducing waste.
@@ -49,7 +50,7 @@ When we shrink the box, the surface area also shrinks. The main side of the box 
 ### Larger problems
 Not much the designer's fault, but relevant to any solution design.
 
-##### The price
+#### The price
 There are two main factors for the high price:
 - As mentioned before, there is an [active effort](https://www.theguardian.com/society/2019/nov/27/morning-after-pill-expensive-high-street) to encourage people to choose stable and healthier (ie doesn't cause terrible side effects) contraceptives.
 - Contraceptive demand is very inelastic (the more inflexible people are with their choice of purchase, the higher the retailer/manufacturer can price the product). One would notice that condoms are also very costly, plan B more so. 

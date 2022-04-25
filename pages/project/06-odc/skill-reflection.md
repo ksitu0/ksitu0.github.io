@@ -1,64 +1,26 @@
-some groupthink towards the end when pressed for time
+![](https://www.snopes.com/tachyon/2021/06/gripsholm_lion.jpg)
+*The Swedish Bad Lion is a result of doing sculptures without researching biology. We were tasked to work with tablet medications, but none of us are experts in the field.*
 
-we didn't prioritize this project much we we all agree that if we were to do it again we wouldnt prioritize it any more
+As part of a design-thinking project in a project-based course, I worked in a group of four to design a solution that employs circular economy principles to reduce tablet medication waste. The problem could become highly technical, but none of us had any expertise in medications. My **critical thinking (metacognition) skills** played a significant role in reaching a balance between economic viability and technological feasibility (and human desire). (*Change by Design*, Tim Brown) In particular, the process required extensive research due to our limited background in the field. For the sake of efficiency, our group members divided the research questions. I had to synthesize and think about our questions, thoughts, and findings in a very metacognitive way because I am not an expert in tablet medications, and "common sense" might not come as naturally to me. This was quite challenging: I have never attempted a problem in such a foreign field. My work led to a big turning point in our project: we had to remove more than half of all ideas/prototypes we could come up with because they are not economically viable or technologically feasible.
 
-did check ups
+**My trek to balancing Tim Brown's design constraints**
 
-personal lives got in the way lol
+At the beginning of the project, my group had the tendency to work with a technical solution, such as remodeling tablet medication packages. However, during my periodic reflections on our progress, I realized that we can not only do a non-technical solution (that is, we forgot about this whole solution space), but we might not even have the proper technical background to conduct a technical solution. I volunteered to research tablet medication regulations to check on our group's inherent assumptions. It turns out that a technical solution is nearly impossible due to our limited technical background. 
 
-communicated personal lives to let ppl know 
-- not blame
-- picked up other ppls work
+Design thinking discourages the act of "turning down ideas." Once I learned more about the technical regulations of tablet medications, I proceeded to violate this rule. Because the initial norms were to not violate design thinking rules (we are in a design thinking course), I convinced my group members with my reasonings:
+- Some ideas are absolutely laughable to an industry expert (for example, "let's add some extra coating to the tablet to replace the package" doesn't work because coating material and thickness are determined by where scientists want the tablet contents to dissolve in the digestive tract). In a technical project group, these ideas will not even be brought to the table because everyone knows that they won't work. We do not have the background and intuitions of an industry expert, hence it is hard for us to figure out what is a "dumb idea" or realize the technical skills required to execute the idea. Some of our ideas might violate regulations or are technically infeasible in our hands, hence they should be removed.
+- A part of the scientific community culture mocks policymakers for "not knowing what they're doing." More precisely, this mocks policymakers for making statements that don't follow the science. Technologically inconsistent solutions violate our design criteria.
 
-team charter was better htan last time
+I began to periodically evaluate research results: why can some parties execute their solutions (like a new packaging material) and is that something doable by our skills? I synthesize my evaluations and connect them to our group's progress. This gives the whole group better benchmarks for what makes a solution economically viable and technologically feasible. I also learned to periodically check our prototypes with our targets, stakeholders, and impact value because these are all important aspects of our design criteria. 
 
-used strengths
+Towards the end of our project, we finalized our solution to a policy brief proposal. My metacognitive skills were once again vital in catching loopholes and matching our solution to our design criteria. For example, I pointed out that from my previous studies in economics, taxation negatively impacts boths suppliers and consumers, making the solution less desirable and human-centered. 
 
-solved conflicts p well
+**Impact**
 
-decision making was good
+I not only managed to filter out the majority of solutions that are not viable nor feasible, but I also spearheaded our group's change from searching in the technical solution space to the non-scientific solution space.
 
-bigger group -> management was exponentially more difficult
+I consider my efforts successful: 
+- We did not become policymakers who making incorrect assumptions to science.
+- Our solution hits a decent balance between human desirability, economic viability, and technological feasibility. (*Change by Design*, Tim Brown) In our final presentations, we received consistently positive feedback on our performance regarding these design principles.
 
-some neg and pos interactions influence project outcome
-
-thye say u dont turn down ideas but u kinda have to
-- we dont have the bg knowledge to know what is absolutely stupid
-- scientific community bashes policy makes
-- i think we handled that p well
-
-
-****
-
-START
-
-Write about *your personal actions* (not group/others) and the results of *your actions*. DIscussions action(s) or behaviors that relate to **one** professional skill category: thinking skill
-
-Choose smt diff from 1
-
-**critical thinking**: synthesis of findings
-
-thye say u dont turn down ideas but u kinda have to
-- we dont have the bg knowledge to know what is absolutely stupid
-- scientific community bashes policy makes
-- i think we handled that p well
-
-meta thoughts on the reason thing prompt is a part of the ODC
-
-zooming out to the bigger picture
-
-what is rethink?
-
-i had the tendency to do something technical but soon realized that could be a problem and so i looked up regulations to check on my assumptions and found technical solution is nearly impossible
-
-evaluating research results: why some parties can do the solutions they do and is that a something doable by us
-
-checking in w our targets, stakeholders, impact value as we iterate through possibilities
-
-catching loophols: involves meta thinking
-
-by understanding the connections between ideas  
-● by determining the importance and relevance of arguments or ideas  
-● by identifying inconsistencies or errors in reasoning  
-● by approaching problems in a consistent and systematic way  
-● by reflecting on the justifications of your own assumptions, beliefs, and/or value
+In the process, I realized the importance of systematic approaches to problems because they force us to consider aspects that may not naturally pop up in our minds. I learned that there is more to design beyond design thinking: sometimes the values presented by design thinking are conflicting, and it is up to the problem solvers to determine which values matter more than the other. These core critical thinking skills helped me expand the scope of projects I can attempt by giving me guidance on how to approach projects in field I'm not familiar with. 
