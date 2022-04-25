@@ -11,7 +11,7 @@
             "url": "/project/06",
 
             "content": {
-                "TLDR": "/06-odc/synopsis.md",
+                "TLDR": "/06-odc/synopsis.mdx",
                 "writings": [
                     {
                         "title": "Synthesizing information to avoid the Swedish Bad Lion: Applying Critical Thinking Skills",
@@ -49,8 +49,17 @@
             "url": "/project/04",
 
             "content": {
-                "TLDR": "/04-psa/synopsis.md",
-                "writings": []
+                "TLDR": "/04-psa/synopsis.mdx",
+                "writings": [
+                    {
+                        "title": "My favorite conflict resolution experience",
+                        "file": "/04-psa/skill-reflection.md"
+                    },
+                    {
+                        "title": "Full Project Dossier",
+                        "file": "/04-psa/dossier.md"
+                    }
+                ]
             }
         },
         {

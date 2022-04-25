@@ -8,31 +8,39 @@ import markdownToHtml from '../../lib/markdownToHtml';
 
 import Nav from '../../components/nav'
 import { useState } from 'react';
+import MDXEmbed from './MDXEmbed';
+import { compile, evaluate, run, runSync } from '@mdx-js/mdx'
+import dynamic from 'next/dynamic';
+
+import * as runtime from 'react/jsx-runtime.js'
+import { MDXProvider } from '@mdx-js/react/lib';
 
 export default function Project(props) {
   const router = useRouter()
   const { id } = router.query
-  console.log(props.writings[1])
-  console.log(props.tldr)
 
-  const [selected, setSelected] = useState(-1); // not good ux for mobile but TODO
+  const [selected, setSelected] = useState(-1);
 
+  const {default: MDXContent} = runSync(props.tldr, runtime)
+  console.log(MDXContent)
+
+  // phone scroll bad
   return (
     <div className="text-base dark:text-white dark:bg-black font-light md:h-screen md:max-h-screen md:flex md:flex-col">
       <Nav />
-      <div className="block md:w-screen md:flex md:flex-row my-10 px-4 md:mx-auto md:justify-center md:grow md:overflow-hidden">
-        <div className={`${selected >=0 ? "md:w-5/12" : "md:w-3/4"} max-w-prose md:mr-10`}>
+      <div className={`block md:w-screen md:flex md:flex-row my-10 px-4 md:mx-auto md:justify-center md:grow ${selected >=0 ? "md:overflow-hidden" : "overflow-scroll"}`}>
+        <div className={` ${selected >=0 ? "md:w-5/12 overflow-y-scroll overflow-x-hidden" : "md:w-3/4"} max-w-prose md:mr-6 md:pr-4`}>
           <div className="text-2xl md:text-3xl font-semibold">{props.info.title}</div>
-          <div className="text-lg">{props.info.summary}</div>
+          <div className="text-lg my-3">{props.info.summary}</div>
           
           <div className="text-xl font-semibold my-3">TLDR (Synopsis) </div>
-          <div className={`prose dark:prose-invert my-3 pb-10 text-base leading-6 text-slate-600 dark:text-slate-400`} dangerouslySetInnerHTML={{ __html: props.tldr }}>
-          </div>
-
-          <div className="flex-col rounded my-4">
+          <div className="prose"><MDXContent /></div>
+          
+          <div className="text-xl font-semibold my-3">Writings</div>
+          <div className="flex-col rounded my-3">
             <div className="h-px bg-neutral-300 dark:bg-neutral-600"></div>
             {props.info.content && props.writings.map((i, idx) => (<>
-              <div className={`${idx == selected ? "border-yellow-500 " : "border-transparent "} border-l-4 text-lg px-2 sm:my-0 py-1.5 sm:text-base sm:px-3 sm:py-2 hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-20 ${selected == idx ? 'bg-black/20 dark:bg-white/30' : ''} `}
+              <div key={i.title} className={`${idx == selected ? "border-yellow-500 " : "border-transparent "} border-l-4 text-lg px-2 sm:my-0 py-1.5 sm:text-base sm:px-3 sm:py-2 hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-20 ${selected == idx ? 'bg-black/20 dark:bg-white/30' : ''} `}
                 onClick={() => setSelected(idx)}
               >
                 {i.title}
@@ -50,7 +58,7 @@ export default function Project(props) {
             <button onClick={() => setSelected(-1)}><CgClose size={24} /> </button>
           </div>
           <div className="overflow-y-scroll overflow-x-hidden">
-          <div className={`${selected >= 0 ? "block" : "hidden"} border-yellow-500 border-l-4 text-lg px-2 sm:my-0 py-1.5 sm:text-base sm:px-3 sm:py-2 `}>
+          <div className={`text-xl font-semibold ${selected >= 0 ? "block" : "hidden"} border-yellow-500 border-l-4 px-2 sm:my-0 py-1.5 sm:px-3 sm:py-2 `}>
             {selected >= 0 ? props.writings[selected].title : ''}
           </div>
           <div className={`${selected >= 0 ? "block" : "hidden"} prose dark:prose-invert my-3 pb-10 text-base leading-6 text-slate-600 dark:text-slate-400`} dangerouslySetInnerHTML={{ __html: props.writings[selected >= 0 ? selected : 0].htmlContent }}>
@@ -70,12 +78,13 @@ export async function getStaticProps(context) {
     let tldr;
     if (!info.content.TLDR) {
       console.warn("wheres ur tldr")
-      tldr = "<p>working on it!</p>\n"
+      tldr="asf"
+      // tldr = {status: 0, content: "<p>working on it!</p>\n"}
     } else {
-      const tldrFile = fs.readFileSync("./pages/project" + info.content.TLDR, 'utf-8');
-      const { data: frontmatter, content } = matter(tldrFile);
-      let htmlContent = await markdownToHtml(content);
-      tldr = htmlContent
+      const compiled = await compile(fs.readFileSync("./pages/project" + info.content.TLDR), {outputFormat: 'function-body'})
+      tldr=String(compiled)
+      // const {default: MDXContent} = await evaluate(fs.readFileSync("./pages/project" + info.content.TLDR), {...runtime})
+      // tldr = {status: 1, content: MDXContent}
     }
 
     let writings = await Promise.all(info.content.writings.map(async (i) => {
