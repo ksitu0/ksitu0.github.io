@@ -20,7 +20,7 @@ export default function Nav(props) {
     return (
         <nav className="dark:text-white">
             <ul className="sticky top-0 flex flex-wrap sm:justify-between items-end sm:items-center p-4 sm:p-8 mt-0">
-                <li>
+                <li className="hidden sm:block">
                     <Link href={router.pathname =="/" ? "https://github.com/ksitu0": "/"}>
                     <div className="p-2 rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 transform duration-200">
                         {router.pathname == "/" ? <FaGithub size={24}/> : <RiHomeLine size={24} />}
