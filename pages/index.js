@@ -7,7 +7,7 @@ import Post from "../components/Post"
 import projects from './api/projects.json'
 import React, { useState, useEffect } from 'react';
 
-export default function Home({projectCards, tags}) {
+export default function Home(props) {
   //const { posts, error } = useGetData("/projects")
   // if (error) {
   //   console.log(error)
@@ -20,19 +20,19 @@ export default function Home({projectCards, tags}) {
   const [include, setInclude] = useState(["Thinking", "Design", "Technical"]);
 
   useEffect(()=>{
-    let tagCategories = Object.values(tags).map(i=>i.category).flat();
+    let tagCategories = Object.values(props.tags).map(i=>i.category).flat();
     tagCategories = tagCategories.filter((val, idx, self)=> self.indexOf(val) == idx);
     setCategories(tagCategories);
-  }, [tags])
+  }, [props.tags])
 
-  console.log(include)
   return (
-    <div className="text-base dark:text-white dark:bg-black font-light">
+    <div className="h-screen text-base dark:text-white bg-[url('/banner.png')] dark:bg-[url('/banner-dark.png')] bg-cover font-light ">
+      <div className={`${props.animateBg === false ? '' : "animate-fade-in"} h-screen bg-white/80 dark:bg-black/60 backdrop-blur-[1px]`}>
       <HeadObject>
         {/* You can put extra tags in here, or leave it blank */}
         {/* dark mode sliding */}
       </HeadObject>
-      <Nav />
+      <Nav/>
       <div className="w-screen">
         <div className="flex flex-col space-y-4 p-10 pt-2">
           <div className="text-lg sm:text-xl ">
@@ -42,9 +42,9 @@ export default function Home({projectCards, tags}) {
             I <p className="font-semibold inline bg-yellow-400 text-black">Build Software</p>, but I'm not just a programmer. <br></br>
             I like to <p className="font-semibold inline bg-yellow-400 text-black">Design Creative Solutions</p>.
           </div>
-          <div>
-            Check out my <a className="inline border-b-2 border-yellow-400" href="https://github.com/ksitu0">github</a> and 
-            design philosophy!
+          <div className="text-lg sm:text-xl">
+            Check out my <a className="inline border-b-2 border-yellow-400" href="https://github.com/ksitu0" target="_blank">github</a> and <a className="inline border-b-2 border-yellow-400" href="/philosophy">design philosophy</a>! <br></br>
+            Or are you wondering <a className="inline border-b-2 border-yellow-400" href="/whats-in-the-background">What's in the background?</a> 
           </div>
           <div className="text-lg sm:text-xl">
             Recents: React Native, NextJS, C/C++, and Design Thinking.
@@ -82,10 +82,10 @@ export default function Home({projectCards, tags}) {
 
       <div className="w-screen sm:overflow-x-scroll sm:px-10 sm:pb-10">
         <div className="flex w-fit flex-col sm:flex-row">
-        {projectCards.filter(i=> {
+        {props.projectCards.filter(i=> {
           let shouldInclude = false;
           i.tags.forEach((s) => {
-            tags[s].category.forEach((c) => {
+            props.tags[s].category.forEach((c) => {
               if (include.includes(c)) {
                 shouldInclude =  true;
               }
@@ -93,11 +93,11 @@ export default function Home({projectCards, tags}) {
           })
           return shouldInclude;
         }).map(post => (
-          <Post post={post} key={post.id} tagData={tags} 
+          <Post post={post} key={post.id} tagData={props.tags} 
             onMouseEnter={()=>{
               console.log("me")
               setHover(true);
-              setFeatureUrl(projectCards.filter(i=> i.id == id)[0].featureImg);
+              setFeatureUrl(props.projectCards.filter(i=> i.id == id)[0].featureImg);
             }} 
             onMouseLeave={() => {
               setHover(false);
@@ -106,6 +106,7 @@ export default function Home({projectCards, tags}) {
         ))}
         </div>
       </div>
+    </div>
     </div>
   )
 }

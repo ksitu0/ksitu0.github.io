@@ -34,13 +34,13 @@ export default function Project(props) {
           <div className="text-lg my-3">{props.info.summary}</div>
           
           <div className="text-xl font-semibold my-3">TLDR (Synopsis) </div>
-          <div className="prose"><MDXContent /></div>
+          <div className="prose dark:prose-invert"><MDXContent /></div>
           
           <div className="text-xl font-semibold my-3">Writings</div>
           <div className="flex-col rounded my-3">
             <div className="h-px bg-neutral-300 dark:bg-neutral-600"></div>
             {props.info.content && props.writings.map((i, idx) => (<>
-              <div key={i.title} className={`${idx == selected ? "border-yellow-500 " : "border-transparent "} border-l-4 text-lg px-2 sm:my-0 py-1.5 sm:text-base sm:px-3 sm:py-2 hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-20 ${selected == idx ? 'bg-black/20 dark:bg-white/30' : ''} `}
+              <div key={i.title} className={`${idx == selected ? "border-yellow-400 " : "border-transparent "} border-l-4 text-lg px-2 sm:my-0 py-1.5 sm:text-base sm:px-3 sm:py-2 hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-20 ${selected == idx ? 'bg-black/20 dark:bg-white/30' : ''} `}
                 onClick={() => setSelected(idx)}
               >
                 {i.title}
@@ -49,16 +49,15 @@ export default function Project(props) {
             </>
             ))}
           </div>
-          {/* <div className="prose mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: i.htmlContent }}>
-      </div> */}
         </div>
+        
         { props.writings.length > 0 ?
         <div className={`absolute md:static md:overflow-hidden md:h-full md:max-h-full transition-all top-0 right-0 ${selected >= 0 ? "w-screen p-4 md:max-w-prose md:w-1/2" : "w-0 p-0"} flex flex-col min-h-screen md:min-h-0 sm:rounded-lg bg-neutral-100 dark:bg-neutral-800`}>
           <div className={`self-end ${selected >= 0 ? "block" : "hidden"}`}>
             <button onClick={() => setSelected(-1)}><CgClose size={24} /> </button>
           </div>
           <div className="overflow-y-scroll overflow-x-hidden">
-          <div className={`text-xl font-semibold ${selected >= 0 ? "block" : "hidden"} border-yellow-500 border-l-4 px-2 sm:my-0 py-1.5 sm:px-3 sm:py-2 `}>
+          <div className={`text-xl font-semibold ${selected >= 0 ? "block" : "hidden"} border-yellow-400 border-l-4 px-2 sm:my-0 py-1.5 sm:px-3 sm:py-2 `}>
             {selected >= 0 ? props.writings[selected].title : ''}
           </div>
           <div className={`${selected >= 0 ? "block" : "hidden"} prose dark:prose-invert my-3 pb-10 text-base leading-6 text-slate-600 dark:text-slate-400`} dangerouslySetInnerHTML={{ __html: props.writings[selected >= 0 ? selected : 0].htmlContent }}>

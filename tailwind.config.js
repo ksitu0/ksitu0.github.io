@@ -8,11 +8,27 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-			animationDelay: {
-				"2s": 2000,
-			},
+      animationDelay: {
+        "3s": "3s",
+      },
       spacing: {
         'width': '100vw',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+          },
+          '70%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        }
+      },
+      animation: {
+        'fade-in': 'fade-in 2s ease-out'
       }
     },
   },
@@ -20,7 +36,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-		require("tailwindcss-animate"),
-		require('@tailwindcss/typography')
-	],
+    require("tailwindcss-animate"),
+    require('@tailwindcss/typography')
+  ],
 }
