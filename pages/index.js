@@ -31,10 +31,11 @@ export default function Home(props) {
         <HeadObject>
           {/* You can put extra tags in here, or leave it blank */}
           {/* dark mode sliding */}
+          {/* bg takes long time to load TODO */}
         </HeadObject>
         <Nav />
         <div className="w-screen">
-          <div className="flex flex-col space-y-4 p-10 pt-2">
+          <div className="flex flex-col space-y-4 px-4 sm:px-10 md:px-20 lg:px-40 py-10 pt-2">
             <div className="text-lg sm:text-xl ">
               Hi, my name is <p className="inline border-b-2 border-yellow-400"> Karen</p>. <br></br>
             </div>
@@ -58,12 +59,12 @@ export default function Home(props) {
           </div>
         </div>
 
-        <div className="inline pl-10 mr-10 text-lg sm:text-xl font-semibold border-b-2 border-yellow-400">Some Projects</div>
+        <div className="inline pl-4 sm:pl-10 md:pl-20 lg:pl-40 mr-0 sm:mr-10 md:mr-20 lg:mr-40 text-lg sm:text-xl font-semibold border-b-2 border-yellow-400">Some Projects</div>
 
-        <div className="text-sm px-10 pt-3">
+        <div className="text-sm px-4 sm:px-10 md:px-20 lg:px-40 pt-3">
           Recents: React Native, NextJS, C/C++, and Design Thinking.
         </div>
-        <details className="w-screen px-10 pb-3" open={false}>
+        <details className="w-screen px-4 sm:px-10 md:px-20 lg:px-40 pb-3" open={false}>
           <summary className="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
             Skill Filter
           </summary>
@@ -87,7 +88,7 @@ export default function Home(props) {
           </div>
         </details>
 
-        <div className="w-screen sm:overflow-x-scroll sm:px-10 sm:pb-10">
+        <div className="w-screen sm:overflow-x-scroll px-4 sm:px-10 md:px-20 lg:px-40 sm:pb-10">
           <div className="flex w-fit flex-col sm:flex-row">
             {props.projectCards.filter(i => {
               let shouldInclude = false;
