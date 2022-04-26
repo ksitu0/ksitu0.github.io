@@ -5,7 +5,7 @@ export default function Post({ post, tagData }) {
   const { title, summary, id, tags, url, featureImg } = post
   return (
     <Link className="inline-block" href={url}>
-      <div className={`flex flex-col ${id % 2 ? "items-start" : "items-end"} sm:relative my-3 sm:mr-5 sm:my-3 sm:rounded-lg overflow-hidden text-base border-yellow-400 sm:border dark:border-0 transition sm:shadow-md sm:hover:shadow-xl duration-300 ease-in-out`}>
+      <div className={`flex flex-col ${id % 2 ? "items-start" : "items-end"} sm:relative my-3 sm:mr-5 sm:my-3 sm:rounded-lg overflow-hidden text-base border-yellow-400 sm:border dark:border-transparent transition sm:shadow-md sm:hover:shadow-xl duration-300 ease-in-out`}>
         <img className={`z-10 hidden bg-white dark:bg-neutral-800 object-contain h-40 mb-4 transition sm:shadow-md sm:hover:shadow-xl duration-300 ease-in-out
                          sm:block sm:mb-0 sm:min-w-full sm:min-h-full sm:object-left-center ${featureImg[0] === "contain" ? "sm:object-contain" : "sm:object-cover"} sm:absolute sm:opacity-0 sm:hover:opacity-100`} src={featureImg[1]}></img>
         <div className="flex flex-col w-screen sm:w-80 sm:h-72 bg-neutral-100 sm:bg-white bg-white dark:bg-neutral-800 sm:shadow-md sm:hover:shadow-xl transition-shadow duration-300 ease-in-out">
